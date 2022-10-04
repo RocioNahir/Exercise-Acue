@@ -13,14 +13,14 @@ function App() {
     <main className="wrapperAll">
       <h1>{"Update Parent State Challenge (Using Callback)"}</h1>   
       <section className='wrapperAll_body'>
-        <div className='wrapperAll_body--module'>
+        <section className='wrapperAll_body--module'>
           <h2>Parent</h2>
           <p>{change}</p>
-        </div>
-        <div className='wrapperAll_body--module'>
+        </section>
+        <section className='wrapperAll_body--module'>
           <h2>Child</h2>
           <Children handleClickChildren = {handleClickChildren}/>
-        </div>
+        </section>
       </section>
     </main>
   );

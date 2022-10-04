@@ -14,8 +14,8 @@ export default function Children({handleClickChildren}){
     }
 
     return (
-        <>
+        <div>
             <button name={sentence} onClick={handleClick}>Change Parent Value</button>
-        </>
+        </div>
     );
 };

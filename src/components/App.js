@@ -10,23 +10,19 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <header>
-        <b>
-          {"Update Parent State Challenge (Using Callback)"}
-        </b>
-      </header>
-      <body>
-        <div>
-          <p>Parent</p>
-          {change}
+    <main className="wrapperAll">
+      <h1>{"Update Parent State Challenge (Using Callback)"}</h1>   
+      <section className='wrapperAll_body'>
+        <div className='wrapperAll_body--module'>
+          <h2>Parent</h2>
+          <p>{change}</p>
         </div>
-        <div>
-          <p>Child</p>
+        <div className='wrapperAll_body--module'>
+          <h2>Child</h2>
           <Children handleClickChildren = {handleClickChildren}/>
         </div>
-      </body>
-    </div>
+      </section>
+    </main>
   );
 }
 

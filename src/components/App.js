@@ -12,12 +12,12 @@ function App() {
   return (
     <main className="wrapperAll">
       <h1>{"Update Parent State Challenge (Using Callback)"}</h1>   
-      <section className='wrapperAll_body'>
-        <section className='wrapperAll_body--module'>
+      <section className='wrapperAll_wrapperModules'>
+        <section className='wrapperAll_wrapperModules--module'>
           <h2>Parent</h2>
           <p>{change}</p>
         </section>
-        <section className='wrapperAll_body--module'>
+        <section className='wrapperAll_wrapperModules--module'>
           <h2>Child</h2>
           <Children handleClickChildren = {handleClickChildren}/>
         </section>

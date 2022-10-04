@@ -1,6 +1,14 @@
+import { useState } from 'react';
 import './App.css';
+import Children from './Children';
 
 function App() {
+  const [change, setChange] = useState("I need to be update from my child")
+
+  function handleClickChildren(value) {
+    setChange(value);
+  }
+
   return (
     <div className="App">
       <header>
@@ -11,11 +19,11 @@ function App() {
       <body>
         <div>
           <p>Parent</p>
-          {"I need to be update from my child"}
+          {change}
         </div>
         <div>
           <p>Child</p>
-          <button>Change Parent Value</button>
+          <Children handleClickChildren = {handleClickChildren}/>
         </div>
       </body>
     </div>

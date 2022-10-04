@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <b>
+          {"Update Parent State Challenge (Using Callback)"}
+        </b>
       </header>
+      <body>
+        <div>
+          <p>Parent</p>
+          {"I need to be update from my child"}
+        </div>
+        <div>
+          <p>Child</p>
+          <button>Change Parent Value</button>
+        </div>
+      </body>
     </div>
   );
 }
